@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@200;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --very-dark-blue:hsl(234, 12%, 34%);
+    --gr-blue:hsl(229, 6%, 66%);
+    --very-light-gray:hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: Poppins;
+}
+
+section.ai-introduce{
+    background-color: var(--very-light-gray);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.ai-introduce-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10rem;
+    padding-bottom: 3rem;
+}
+#big-text-adjectives{
+    font-weight: 200;
+    font-size: 2rem;
+    color: var(--very-dark-blue);
+}
+#big-text-producer{
+    color: var(--very-dark-blue);
+    font-size: 2rem;
+    font-weight: 600;
+}
+#p-text-about-ai{
+    padding-top: 1rem;
+    width: 60%;
+    color: var(--gr-blue);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+.ai-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}    
+
+.card1 {
+     
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 350px;
+    height: 250px;
+    padding: 1.5rem;
+    border-top: 4px solid cyan;
+    border-radius: 5px;
+}
+
+.card2 {  
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 350px;
+    height: 250px;
+    padding: 1.5rem;
+    border-top: 4px solid red;
+    border-radius: 5px;
+    
+}
+.card3 {  
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 350px;
+    height: 250px;
+    padding: 1.5rem;
+    border-top: 4px solid orange;
+    border-radius: 5px;
+    /* position: absolute;
+    bottom: 5rem; */
+}
+
+.card4 {
+     
+     background-color: white;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     width: 350px;
+     height: 250px;
+     padding: 1.5rem;
+     border-top: 4px solid blue;
+     border-radius: 5px;    
+}
+.card-row-set{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.card{
+    position: relative;
+}
+.card img{
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+}
+.ai-cards h1{
+    font-size: 18px;
+    color: var(--very-dark-blue);
+}
+.ai-cards p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--very-dark-blue);
+}
+@media only screen and (max-width:768px){
+    section.ai-introduce{
+       padding: 3rem 0;
+    }
+    .ai-introduce-text{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    #big-text-adjectives{
+        font-size: 1.5rem;
+    }
+    #big-text-producer{
+        font-size: 1.5rem;
+    }
+    #p-text-about-ai{
+        width: 80%;
+    }
+    .ai-cards{
+        padding-top: 2rem;
+        flex-direction: column;
+    }   
+    .card{
+        width: 315px;
+    }
+}
